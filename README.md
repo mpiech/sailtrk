@@ -9,17 +9,17 @@ cd sailrsv
 oc project myproj
 oc import-image mpiech/s2i-clojure-mail --confirm
 # first time build
-oc new-build mpiech/s2i-clojure-mail~. --name=sailrsv --env-file=env.cfg
+oc new-build mpiech/s2i-clojure-mail~. --name=sailtrk --env-file=env.cfg
 # subsequent rebuilds
-oc start-build sailrsv --from-dir=. --follow
+oc start-build sailtrk --from-dir=. --follow
 
 # for testing/debugging
 # uncomment while's in run.sh and core.lj
-oc new-app sailrsv --env-file=env.cfg
+oc new-app sailtrk --env-file=env.cfg
 
 # for cronjob
-oc create cronjob sailrsv \
---image=image-registry.openshift-image-registry.svc:5000/myproj/sailrsv \
+oc create cronjob sailtrk \
+--image=image-registry.openshift-image-registry.svc:5000/myproj/sailtrk \
 --schedule='05 08 * * *' --restart=Never
 
 ############################################################
