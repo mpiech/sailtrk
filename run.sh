@@ -30,7 +30,7 @@ if [ -f /tmp/sailtrk_`date +%Y%m%d`.json.gz ]; then
 
     echo -----sailtrack----- &>> $TMPFILE
     
-    nohup java -jar $HOME/app-standalone.jar /tmp/sailtrk_`date +%Y%m%d`.json &>> $TMPFILE
+    nohup ${HOME}/jdk-17/bin/java -jar $HOME/app-standalone.jar /tmp/sailtrk_`date +%Y%m%d`.json &>> $TMPFILE
     
 else
     echo "no track file found" &>> $TMPFILE
