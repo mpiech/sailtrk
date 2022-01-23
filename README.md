@@ -1,6 +1,6 @@
 # sailtrk
 
-Gets sailboat track data for sailcal. Downloads a .json file of tuples of latitude, longitude, timestamp, and other fields representing the track of e.g. a vessel provided by a service such as Marine Traffic. Puts track data in a MongoDB database. Set up to run nightly as a cronjob and email changes. Designed for use with sailcal.
+Gets sailboat track data for sailcal. Downloads a .json file of tuples of timestamp, latitude, longitude, and other fields representing the track of e.g. a vessel provided by a service such as Marine Traffic. Puts track data in a MongoDB database. Set up to run nightly as a cronjob that updates database and emails changes. Designed for use with sailcal.
 
 ```
 git clone https://github.com/mpiech/sailrsv
