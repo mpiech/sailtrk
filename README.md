@@ -3,8 +3,8 @@
 Gets sailboat track data for sailcal. Downloads a .json file of tuples of timestamp, latitude, longitude, and other fields representing the track of e.g. a vessel provided by a service such as Marine Traffic. Puts track data in a MongoDB database. Set up to run nightly as a cronjob that updates database and emails changes. Designed for use with sailcal.
 
 ```
-git clone https://github.com/mpiech/sailrsv
-cd sailrsv
+git clone https://github.com/mpiech/sailtrk
+cd sailtrk
 
 oc project myproj
 oc import-image mpiech/s2i-clojure-mail --confirm
