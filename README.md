@@ -7,7 +7,7 @@ git clone https://github.com/mpiech/sailtrk
 cd sailtrk
 
 oc project myproj
-oc import-image mpiech/s2i-clojure-mail --confirm
+oc import-image mpiech/s2i-clojure-mail --confirm # from Docker Hub
 # first time build
 oc new-build mpiech/s2i-clojure-mail~. --name=sailtrk --env-file=env.cfg
 # subsequent rebuilds
