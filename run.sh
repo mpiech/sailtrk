@@ -17,6 +17,9 @@ echo "From: $TRK_FROM" >> $TMPFILE
 echo "Subject: $TRK_SUBJECT $TMPDATE" >> $TMPFILE
 echo "" >> $TMPFILE
 
+echo "Tracks database type = $TRKDB" >> $TMPFILE
+echo "" >> $TMPFILE
+
 echo "----> `date \"+%H:%M:%S\"` Starting sailtrk" &>> $TMPFILE
 
 echo -----curl----- &>> $TMPFILE
