@@ -11,5 +11,6 @@ pom.xml.asc
 .hgignore
 .hg/
 /cronjob.yaml
+.DS_Store
 *~
 *.*~
